@@ -16,6 +16,10 @@ nav {
     align-items: center;
 }
 
+a {
+    outline: none;
+}
+
 
 .header-nav-menu {
     display: flex;
@@ -29,6 +33,16 @@ nav {
     outline : none;
     cursor: pointer;
     padding: 20px;
+}
+
+a.link-landing {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0E0333;
+    outline: none;
 }
 
 .link-landing a:hover::before{
@@ -49,6 +63,38 @@ main {
     margin: auto;
 }
 
+/* HERO  */
+
+
+.schelling-hero {
+    margin: 50px;
+}
+
+.hero-container {
+    display: flex;
+    width: 518px; 
+}
+
+.schelling-hero .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 96.1%;
+    color: #6F3FF5;
+ }
+
+ .schelling-hero .subtitle {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 63px;    
+    color: #0E0333;
+    padding: 0;
+ }
+
+/* END HERO */
 /* 
 Bubble */
 .bublbe-green{
