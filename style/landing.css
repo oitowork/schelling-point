@@ -31,8 +31,13 @@ nav {
     padding: 20px;
 }
 
-.link-landing :hover{
-    color: #0E0333;
+.link-landing a:hover::before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5BF1CD;
+    mix-blend-mode: normal;
+    border-radius: 50%;
 }
 
 .link-landing select {
@@ -44,38 +49,135 @@ main {
     margin: auto;
 }
 
+/* 
+Bubble */
+.bublbe-green{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 525px;
+    background: #5BF1CD;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
+.bublbe-purple{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 525px;
+    background: #6F3FF5;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
+/* end Bubble gree */
+
+/* @component: speaker-list  */
+.speakers-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.speaker-title {
+    display: flex;
+    justify-content: center;
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    color: #6F3FF5;
+}
+
+.speaker-card {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+.speaker-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-image {
+    display: flex;
+}
+.speaker-image img{
+    display: flex;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.speaker-info .name {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #6F3FF5;
+}
+
+.speaker-info .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+/* end speaker-list */
+
 /* start sponsors section */
 
 .sponsors-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding: 100px;
 }
+
+.sponsors-container .title {
+    display: flex;
+    justify-content: center;
+}
+
 .sponsors-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+.sponsors-list a {
+    cursor: pointer;
+}
 
 .sponsors-card {
     list-style: none;
-    padding-right: 111px;
-}
-
-.sponsors-card &:before {
-    position: absolute;
-    width: 232px;
-    height: 232px;
-    left: 1040px;
-    top: 2862px;
-    border: 8px solid #5BF1CD;
+    padding: 60px;
+    
 }
 
 .image-sponsors {
+    border: 8px solid #5BF1CD;
+    border-radius: 50%;
     width: 182px;
     height: 182px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
 }
 
 /* end sponsors section */
