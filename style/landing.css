@@ -1,3 +1,171 @@
+body {
+    font-family: 'Miriam Libre', sans-serif;
+    max-width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.header-nav-menu {
+    display: flex;
+}
+
+.header-nav-menu li {
+    list-style: none;
+}
+
+.link-landing {
+    outline : none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.link-landing :hover{
+    color: #0E0333;
+}
+
+.link-landing select {
+    color: #0E0333;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* start sponsors section */
+
+.sponsors-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px;
+}
+.sponsors-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.sponsors-card {
+    list-style: none;
+    padding-right: 111px;
+}
+
+.sponsors-card &:before {
+    position: absolute;
+    width: 232px;
+    height: 232px;
+    left: 1040px;
+    top: 2862px;
+    border: 8px solid #5BF1CD;
+}
+
+.image-sponsors {
+    width: 182px;
+    height: 182px;
+}
+
+/* end sponsors section */
+
 footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
     background-color: #0E0333;
+}
+
+.section-title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100%;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    padding: 56px;
+}
+
+.section-container_call_action {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+.description {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+
+}
+
+.section-conainer_info {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding-left: 56px
+}
+
+.section-conainer_info .title {
+    color: #6F3FF5;
+    padding-bottom: 52px;
+}
+
+.section-conainer_info .description {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+
+}
+
+.text-menu {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.button-call-to-action {
+    background: #6F3FF5;
+    border-radius: 8px;
+    display: flex;
+    width: 640px;
+    padding: 59px;
+    color: #fff;
+    justify-items: center;
+    text-transform: uppercase;
+}
+
+.project-brand {
+    display: flex;
+    padding-top: 154px;
+    padding-bottom: 154px;
+    justify-content: center;
+    align-items: center;
 }
