@@ -52,6 +52,7 @@ nav {
 
 a {
     outline: none;
+    text-decoration: none;
 }
 
 img {
@@ -70,12 +71,49 @@ img {
     list-style: none;
 }
 
+/* bubble effect */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav.schelling-nav ul li a{
+    position: relative;
+}
+nav.schelling-nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    content: '.';
+    color: transparent;
+    background: #5BF1CD;
+    height: 1px;
+    border-radius: 50%;
+}
+
+nav.schelling-nav ul li a:hover:after {
+    width: 16px;
+    height: 16px;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    background: #5BF1CD;
+}
+
+/* end bubble effect */
+
 .link-landing {
     outline: none;
     cursor: pointer;
     padding: 20px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
+
 
 a.link-landing {
     font-family: Miriam Libre;
@@ -85,15 +123,6 @@ a.link-landing {
     line-height: 24px;
     color: #0E0333;
     outline: none;
-}
-
-.link-landing a:hover::before {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #5BF1CD;
-    mix-blend-mode: normal;
-    border-radius: 50%;
 }
 
 .link-landing select {
