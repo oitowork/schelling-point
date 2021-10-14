@@ -124,11 +124,64 @@ main {
 /* END HERO */
 /* 
 Bubble */
+
+.bubble {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.bubble.yellow {
+    background-color: #FFCC00;
+} 
+.bubble.teal {
+    background-color: #5BF1CD;
+} 
+.bubble.violet {
+    background-color: #6F3FF5;
+}
+
+.bubble.violet.top.left {align-self: baseline; left: 916px;}
+.bubble.violet.top.right {align-self: baseline;right: 916px;}
+.bubble.violet.bottom.right {align-self: end;right: 916px;}
+.bubble.violet.bottom.left {align-self: end;left: 916px;}
+.bubble.violet.top.center {align-self: baseline;right: 1359px;}
+.bubble.violet.bottom.center {align-self:end;right: 1359px;}
+
+
+.bubble.yellow.top.left {align-self: baseline;left: 916px;}
+.bubble.yellow.top.right {align-self: baseline;right: 916px;}
+.bubble.yellow.top.center {align-self: baseline;right: 1359px;}
+.bubble.yellow.bottom.right {align-self: end; right: 916px;}
+.bubble.yellow.bottom.left {align-self: end; left: 916px;}
+
+.bubble.teal.top.left {align-self: baseline;left: 916px;}
+.bubble.teal.top.right {align-self: baseline;right: 916px;}
+.bubble.teal.bottom.right {align-self: end; right: 916px;}
+.bubble.teal.bottom.left {align-self: end; left: 916px;}
+.bubble.teal.top.center {align-self: baseline;right: 1359px;}
+.bubble.teal.bottom.center {align-self:end;right: 1359px;}
+
+
+.purple-bubble-top{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 916px;
+    background: purple;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
 .bublbe-green{
     position: absolute;
     width: 40px;
     height: 40px;
-    right: 926px;
+    right: 916px;
     background: #5BF1CD;
     mix-blend-mode: normal;
     border-radius: 50%;
