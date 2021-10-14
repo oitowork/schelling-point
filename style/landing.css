@@ -1,3 +1,455 @@
+body {
+    font-family: 'Miriam Libre', sans-serif;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 1313px) {
+    body {
+      font-size: 140%;
+    }
+  }
+  @media (max-width: 1600px) {
+    body {
+      font-size: 120%;
+    }
+  }
+  @media (max-width: 992px) {
+    body {
+      font-size: 110%;
+    }
+  }
+  @media (max-width: 688px) {
+    body {
+      font-size: 100%;
+    }
+  }
+
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    outline: none;
+}
+
+
+.header-nav-menu {
+    margin-top: 47px;
+    display: flex;
+}
+
+.header-nav-menu li {
+    list-style: none;
+}
+
+.link-landing {
+    outline : none;
+    cursor: pointer;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a.link-landing {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #0E0333;
+    outline: none;
+}
+
+.link-landing a:hover::before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5BF1CD;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
+.link-landing select {
+    color: #0E0333;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* HERO  */
+
+
+.schelling-hero {
+    margin: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-container {
+    display: flex;
+    width: 518px; 
+}
+
+.schelling-hero .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 96.1%;
+    color: #6F3FF5;
+    margin: 0;
+ }
+
+ .schelling-hero .subtitle {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 63px;    
+    color: #0E0333;
+    margin: 0;
+ }
+
+/* END HERO */
+/* 
+Bubble */
+
+.bubble {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.bubble.yellow {
+    background-color: #FFCC00;
+} 
+.bubble.teal {
+    background-color: #5BF1CD;
+} 
+.bubble.violet {
+    background-color: #6F3FF5;
+}
+
+.bubble.violet.top.left {align-self: baseline; left: 916px;}
+.bubble.violet.top.right {align-self: baseline;right: 916px;}
+.bubble.violet.bottom.right {align-self: end;right: 916px;}
+.bubble.violet.bottom.left {align-self: end;left: 916px;}
+.bubble.violet.top.center {align-self: baseline;right: 1359px;}
+.bubble.violet.bottom.center {align-self:end;right: 1359px;}
+
+
+.bubble.yellow.top.left {align-self: baseline;left: 916px;}
+.bubble.yellow.top.right {align-self: baseline;right: 916px;}
+.bubble.yellow.top.center {align-self: baseline;right: 1359px;}
+.bubble.yellow.bottom.right {align-self: end; right: 916px;}
+.bubble.yellow.bottom.left {align-self: end; left: 916px;}
+
+.bubble.teal.top.left {align-self: baseline;left: 916px;}
+.bubble.teal.top.right {align-self: baseline;right: 916px;}
+.bubble.teal.bottom.right {align-self: end; right: 916px;}
+.bubble.teal.bottom.left {align-self: end; left: 916px;}
+.bubble.teal.top.center {align-self: baseline;right: 1359px;}
+.bubble.teal.bottom.center {align-self:end;right: 1359px;}
+
+
+.purple-bubble-top{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 916px;
+    background: purple;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
+.bublbe-green{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 916px;
+    background: #5BF1CD;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
+.bublbe-purple{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 525px;
+    background: #6F3FF5;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+}
+
+/* end Bubble gree */
+
+/* @component: speaker-list  */
+.speakers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speakers-container {
+    display: flex;
+    flex-direction: column;
+    width: 870px;
+}
+
+.speaker-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.speaker-title {
+    display: flex;
+    justify-content: center;
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    color: #6F3FF5;
+}
+
+.speaker-card {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.2em;
+}
+
+.speaker-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-image {
+    display: flex;
+}
+.speaker-image img{
+    display: flex;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.speaker-info .name {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #6F3FF5;
+    margin:0;
+}
+
+.speaker-info .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin:0;
+}
+/* end speaker-list */
+
+/* start sponsors section */
+
+.sponsors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.sponsors-container .title {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sponsors-list a {
+    cursor: pointer;
+}
+
+.sponsors-card {
+    list-style: none;
+    padding: 60px;
+    
+}
+
+.image-sponsors {
+    border: 8px solid #5BF1CD;
+    border-radius: 50%;
+    width: 182px;
+    height: 182px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+/* end sponsors section */
+
 footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
     background-color: #0E0333;
 }
+
+.section-title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100%;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    padding: 56px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container_call_action {
+    justify-content: center;
+    display: flex;
+    margin: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+
+}
+
+.section-conainer_info {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding-left: 56px
+}
+
+.section-conainer_info .title {
+    color: #6F3FF5;
+    padding-bottom: 52px;
+}
+
+.section-conainer_info .description {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+
+}
+
+.text-menu {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.button-call-to-action {
+    height: 80px;
+    width: 30%;
+    border-radius: 8px;
+    background: #6F3FF5;
+    color: white;
+    text-transform: uppercase;
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    border-color: transparent;
+    margin-top: 20px;
+}
+.button-call-to-action .description {
+    width: 791px;
+}
+
+.project-brand {
+    display: flex;
+    padding-top: 154px;
+    padding-bottom: 154px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive Style */
+
+
+@media (max-width: 688px) {
+    header {
+        margin: 0 1em;
+    }
+
+    .schelling-hero {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section.sponsors-container figure {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+}
+    
+
+@media (max-width: 992px) {
+    section.section-container figure {
+        width: 50%;
+    }
+}   
