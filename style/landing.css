@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Miriam Libre', sans-serif;
+    /* font-family: 'Miriam Libre', sans-serif; */
     max-width: 100%;
     margin: auto;
 }
@@ -517,9 +522,7 @@ footer {
 
 .description {
     max-width: 700px;
-    font-family: Libre Franklin;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Montserrat;
     font-size: 22px;
     line-height: 160%;
 
@@ -540,12 +543,10 @@ footer {
 }
 
 .section-conainer_info .description {
-    font-family: Libre Franklin;
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
-    line-height: 160%;
-
+    font-family: Montserrat;
+    text-align: left;
+    line-height: 40px;
 }
 
 .text-menu {
