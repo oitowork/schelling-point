@@ -7,6 +7,10 @@
 - html
 - css
 
+## How  to Run 
+```
+python -m SimpleHTTPServer 3000
+```
 
 ----
   
