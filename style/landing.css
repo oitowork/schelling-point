@@ -75,12 +75,13 @@ img {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+    transition: all .5s;
 }
 
-nav.schelling-nav ul li a{
+nav.schelling-nav ul li a {
     position: relative;
 }
+
 nav.schelling-nav ul li a:after {
     position: absolute;
     bottom: 0;
@@ -578,6 +579,10 @@ footer {
     width: 791px;
 }
 
+#afterparty {
+    justify-content: center;
+}
+
 .project-brand {
     display: flex;
 
@@ -694,6 +699,7 @@ footer {
     .speakers-container .title {
         margin-bottom: 50px;
     }
+
     .schelling-hero-description .title,
     .section-title,
     .speakers-container .title {
@@ -704,7 +710,8 @@ footer {
     .section-conainer_info .description {
         font-size: 1.5rem;
     }
-    .button-call-to-action{
+
+    .button-call-to-action {
         width: 95%;
     }
 
