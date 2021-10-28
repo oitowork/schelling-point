@@ -632,7 +632,7 @@ hr {
 /* start hero-whith-background */
 .logo {
     margin-top: 34px;
-    margin-left: 32px;;
+    margin-left: 32px;
     flex: 1;
 }
 .nav-brand img {
@@ -816,6 +816,7 @@ hr {
         display: flex;
         padding: 0;
         align-items: center;
+        margin-left: 0;
     }
 
 }
