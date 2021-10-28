@@ -156,6 +156,8 @@ main {
     margin-top: 160px;
 }
 
+
+
 .hero-image {
     width: 420px;
     height: 420px;
@@ -598,6 +600,79 @@ footer {
     height: 64px;
 }
 
+/* Start HR Style */
+
+#hr-style-component::before, #hr-style-component::after { content: ''; }
+
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.line {
+    height:0px;
+    border-radius: 2px;
+    color: #0E0333;
+    border: 7px solid #0E0333;
+    width: 100%;
+}
+
+.line.one {
+    border: 17px solid #0E0333;
+}
+
+.line.two {
+    border: 27px solid #0E0333;
+}
+/* end HR Style */
+
+/* start hero-whith-background */
+.logo {
+    margin-top: 34px;
+    margin-left: 32px;;
+    flex: 1;
+}
+.nav-brand img {
+    width: 74px;
+    height:74px;
+}
+
+#hero-version-2 {
+    height: 80vh;
+	padding: 1em;
+	background: url('../image/hero-background.gif') center center ;
+	background-size: 821px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero-version-2 .hero-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-version-2 .schelling-hero-description .title {
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-version-2 .schelling-hero-description .subtitle {
+    font-size: 1.5em;
+    justify-content: center;
+    text-align: center;
+}
+#hero-version-2 .schelling-hero-description {
+    margin: 0;
+}
+
+/* end hero-whith-background */
+
 
 /* Responsive Style */
 @media (max-width: 1280px) {
@@ -657,11 +732,13 @@ footer {
 
 @media (max-width: 688px) {
     header {
-        margin: 0 1em;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .schelling-hero {
-
         display: flex;
         flex-direction: column;
 
@@ -672,6 +749,11 @@ footer {
         flex-direction: column;
         width: 100%;
         padding: 0;
+    }
+
+    #hero-version-2 {
+        height: 120vh;
+        background-size: 414px;
     }
 }
 
@@ -712,8 +794,28 @@ footer {
         font-size: 1.5rem;
     }
 
+    .section-conainer_info .description {
+        padding: 0.5em;
+    }
+
     .button-call-to-action {
         width: 95%;
+    }
+
+    #hero-version-2 {
+        height: 120vh;
+        background-size: 414px;
+    }
+
+    #hero-version-2 nav {
+        justify-content: center;
+    }
+
+    #hero-version-2 .logo {
+        justify-content: center;
+        display: flex;
+        padding: 0;
+        align-items: center;
     }
 
 }
