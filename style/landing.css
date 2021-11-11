@@ -12,7 +12,14 @@ p {
 html {
     scroll-behavior: smooth;
 }
-
+.white_under{
+    color: #ffffff;
+    margin-top:  10px;
+}
+.black_under{
+    margin-top: 20px;
+    text-align: center;
+}
 body {
     /* font-family: 'Miriam Libre', sans-serif; */
     max-width: 100%;
