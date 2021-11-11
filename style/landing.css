@@ -41,6 +41,12 @@ body {
     body {
         font-size: 100%;
     }
+    .header-nav-menu li a{
+        margin: 0px;
+        padding: 0px;
+    }
+    #hero-version-2 {
+    }
 }
 
 header {
