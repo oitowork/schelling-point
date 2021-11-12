@@ -205,6 +205,14 @@ main {
     line-height: 63px;
     color: #0E0333;
 }
+.schelling-hero-description .subtitle2 {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #0E0333;
+}
 
 /* END HERO */
 /* 
@@ -831,4 +839,16 @@ hr {
         margin-left: 0;
     }
 
+}
+.footer p.description{
+    text-align: center;
+}
+.footer {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.footer a{
+    color: white;
+    text-decoration: underline;
 }
