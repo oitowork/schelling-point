@@ -417,6 +417,10 @@ Bubble */
 }
 
 .speaker-card.verified .title{
+    display: block;
+}
+
+.speaker-card.verified .title span{
     font-weight: title;
     font-weight: bold;
     color: #8acacf;
@@ -822,7 +826,6 @@ hr {
     .schelling-hero-description .title,
     .section-title,
     .speakers-container .title {
-        font-size: 2rem;
     }
 
     .schelling-hero-description .subtitle,
