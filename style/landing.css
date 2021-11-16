@@ -133,6 +133,7 @@ nav.schelling-nav ul li a:after {
     padding: 5px 10px;
     border-right: white 35px solid;
 }
+
 nav.schelling-nav ul li a:hover:after {
     width: 16px;
     height: 16px;
