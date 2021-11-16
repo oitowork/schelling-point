@@ -17,8 +17,10 @@ html {
     margin-top:  10px;
 }
 .black_under{
+    color: black;
     margin-top: 20px;
     text-align: center;
+    font-family: Montserrat;
 }
 body {
     /* font-family: 'Miriam Libre', sans-serif; */
