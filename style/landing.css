@@ -412,6 +412,17 @@ Bubble */
     margin: 1.2em;
 }
 
+.speaker-card.verified .name{
+    font-weight: bold;
+}
+
+.speaker-card.verified .title{
+    font-weight: title;
+    font-weight: bold;
+    color: #8acacf;
+}
+
+
 .speaker-info {
     display: flex;
     flex-direction: column;
@@ -551,6 +562,11 @@ footer {
 
 }
 
+.description img{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -12px;
+}
 .section-conainer_info {
     display: flex;
     max-width: 775px;
