@@ -113,7 +113,24 @@ nav.schelling-nav ul li a:after {
     height: 1px;
     border-radius: 50%;
 }
-
+.greenpill{
+    max-width: 100% !important;
+    flex-direction: row !important;
+    justify-content: right;
+}
+.greenpill img{
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: -10px;
+}
+.greenpill p.description{
+    background-color: green;
+    max-width: 25% !important;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-right: white 35px solid;
+}
 nav.schelling-nav ul li a:hover:after {
     width: 16px;
     height: 16px;
@@ -566,7 +583,7 @@ footer {
 
 }
 
-.description img{
+#the-conference .description img{
     width: 35px;
     height: 35px;
     margin-bottom: -12px;
