@@ -12,7 +12,16 @@ p {
 html {
     scroll-behavior: smooth;
 }
-
+.white_under{
+    color: #ffffff;
+    margin-top:  10px;
+}
+.black_under{
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Montserrat;
+}
 body {
     /* font-family: 'Miriam Libre', sans-serif; */
     max-width: 100%;
@@ -40,6 +49,12 @@ body {
 @media (max-width: 688px) {
     body {
         font-size: 100%;
+    }
+    .header-nav-menu li a{
+        margin: 0px;
+        padding: 0px;
+    }
+    #hero-version-2 {
     }
 }
 
@@ -99,6 +114,24 @@ nav.schelling-nav ul li a:after {
     background: #5BF1CD;
     height: 1px;
     border-radius: 50%;
+}
+.greenpill{
+    max-width: 100% !important;
+    flex-direction: row !important;
+    justify-content: right;
+}
+.greenpill img{
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: -10px;
+}
+.greenpill p.description{
+    background-color: green;
+    max-width: 25% !important;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-right: white 35px solid;
 }
 
 nav.schelling-nav ul li a:hover:after {
@@ -190,6 +223,14 @@ main {
     font-weight: normal;
     font-size: 44px;
     line-height: 63px;
+    color: #0E0333;
+}
+.schelling-hero-description .subtitle2 {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
     color: #0E0333;
 }
 
@@ -391,6 +432,21 @@ Bubble */
     margin: 1.2em;
 }
 
+.speaker-card.verified .name{
+    font-weight: bold;
+}
+
+.speaker-card.verified .title{
+    display: block;
+}
+
+.speaker-card.verified .title span{
+    font-weight: title;
+    font-weight: bold;
+    color: #8acacf;
+}
+
+
 .speaker-info {
     display: flex;
     flex-direction: column;
@@ -530,6 +586,11 @@ footer {
 
 }
 
+#the-conference .description img{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -12px;
+}
 .section-conainer_info {
     display: flex;
     max-width: 775px;
@@ -539,7 +600,6 @@ footer {
 }
 
 .section-conainer_info .title {
-    max-width: 308px;
     color: #6F3FF5;
     margin-bottom: 14px;
 }
@@ -791,7 +851,6 @@ hr {
     .schelling-hero-description .title,
     .section-title,
     .speakers-container .title {
-        font-size: 2rem;
     }
 
     .schelling-hero-description .subtitle,
@@ -824,4 +883,16 @@ hr {
         margin-left: 0;
     }
 
+}
+.footer p.description{
+    text-align: center;
+}
+.footer {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.footer a{
+    color: white;
+    text-decoration: underline;
 }
