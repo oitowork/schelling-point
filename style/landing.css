@@ -576,11 +576,16 @@ footer {
     line-height: 47px;
     border-color: transparent;
     margin-top: 20px;
+    cursor:pointer;
 }
 
+.button-call-to-action:hover {
+    filter: brightness(0.85);
+}
 .button-call-to-action .description {
     width: 791px;
 }
+
 
 #afterparty {
     justify-content: center;
