@@ -132,6 +132,7 @@ nav.schelling-nav ul li a:after {
     border-radius: 10px;
     padding: 5px 10px;
     border-right: white 35px solid;
+    cursor: pointer;
 }
 
 nav.schelling-nav ul li a:hover:after {
@@ -636,11 +637,16 @@ footer {
     line-height: 47px;
     border-color: transparent;
     margin-top: 20px;
+    cursor:pointer;
 }
 
+.button-call-to-action:hover {
+    filter: brightness(0.85);
+}
 .button-call-to-action .description {
     width: 791px;
 }
+
 
 #afterparty {
     justify-content: center;
