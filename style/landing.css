@@ -706,10 +706,16 @@ hr {
     height:74px;
 }
 
+.img_back{
+    
+    position: absolute;
+    z-index: -9999;
+    width: 50%;
+}
+
 #hero-version-2 {
     height: 80vh;
 	padding: 1em;
-	background: url('../image/hero-background.gif') center center ;
 	background-size: 821px;
     background-repeat: no-repeat;
     background-position: center;
