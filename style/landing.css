@@ -889,8 +889,10 @@ hr {
     }
 
 }
-tr{
+tr td{
     padding: 5px;
+}
+tr{
     font-family: Montserrat;
     font-size: 14px;
 }
