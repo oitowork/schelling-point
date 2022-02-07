@@ -889,6 +889,19 @@ hr {
     }
 
 }
+tr{
+    padding: 5px;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+tr:nth-child(2n){
+    background-color: #f7f7f7;
+}
+tr:first-child{
+    background-color: #eee;
+    font-weight: bold;
+    font-size: 15px;
+}
 .footer p.description{
     text-align: center;
 }
