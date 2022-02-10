@@ -442,11 +442,16 @@ Bubble */
 }
 
 .speaker-card.verified .title span{
-    font-weight: title;
+    font-weight: bold;
+    color: #8acacf;
+    justify-content: center;
+    align-items: center;
+}
+
+.speaker-card.verified .title .metaverseJob{
     font-weight: bold;
     color: #8acacf;
 }
-
 
 .speaker-info {
     display: flex;
@@ -483,6 +488,8 @@ Bubble */
     line-height: 24px;
     text-align: center;
     color: #000000;
+    display: flex;
+    flex-direction: column;
 }
 
 /* end speaker-list */
