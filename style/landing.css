@@ -48,7 +48,7 @@ body {
 
 @media (max-width: 688px) {
     body {
-        font-size: 100%;
+        font-size: 80%;
     }
     .header-nav-menu li a{
         margin: 0px;
@@ -56,6 +56,29 @@ body {
     }
     #hero-version-2 {
     }
+
+    .img_back{
+    
+    position: absolute;
+    width: 75%;
+    height:75%;
+    }
+    
+
+}
+
+.agenda-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em
+    
+}
+
+.agenda-container .title {
+    display: flex;
+    justify-content: center;
+    color: #6F3FF5;
+
 }
 
 header {
@@ -860,11 +883,11 @@ hr {
 
     .schelling-hero-description .subtitle,
     .section-conainer_info .description {
-        font-size: 1.5rem;
-    }
+        font-size: 1.4rem;
+    /* text-align: center; */}
 
     .section-conainer_info .description {
-        padding: 0.5em;
+        padding: 20px;
     }
 
     .button-call-to-action {
