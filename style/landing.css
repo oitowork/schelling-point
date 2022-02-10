@@ -487,6 +487,24 @@ Bubble */
 
 /* end speaker-list */
 
+/* start agenda section */
+
+.agenda-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em
+
+}
+
+.agenda-container .title {
+    display: flex;
+    justify-content: center;
+    color: #6F3FF5;
+
+}
+
+/* end agenda */
+
 /* start sponsors section */
 
 .sponsors-container {
@@ -801,6 +819,13 @@ hr {
 }
 
 @media (max-width: 688px) {
+    body {
+        font-size: 80%;
+    }
+    .header-nav-menu li a{
+        margin: 0px;
+        padding: 0px;
+    }
     header {
         margin: 0;
         display: flex;
@@ -825,7 +850,15 @@ hr {
         height: 120vh;
         background-size: 414px;
     }
+
+    .img_back{
+        position: absolute;
+        width: 75%;
+        height:75%;
+    }
 }
+
+
 
 @media (max-width: 540px) {
 
@@ -860,11 +893,11 @@ hr {
 
     .schelling-hero-description .subtitle,
     .section-conainer_info .description {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .section-conainer_info .description {
-        padding: 0.5em;
+        padding: 20px;
     }
 
     .button-call-to-action {
