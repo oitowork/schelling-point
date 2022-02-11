@@ -912,15 +912,6 @@ hr {
         margin-top: 50px;
     }
 
-    .speakers-container .title {
-        margin-bottom: 50px;
-    }
-
-    .schelling-hero-description .title,
-    .section-title,
-    .speakers-container .title {
-    }
-
     .schelling-hero-description .subtitle,
     .section-conainer_info .description {
         font-size: 1.4rem;
