@@ -241,7 +241,7 @@ main {
     width: 518px
 }
 
-.schelling-hero-description .subtitle {
+.schelling-hero-description .subtitle, .cta-hero-box .subtitle{
     font-family: Miriam Libre;
     font-style: normal;
     font-weight: normal;
@@ -256,6 +256,60 @@ main {
     font-size: 22px;
     line-height: 33px;
     color: #0E0333;
+}
+
+
+.tag {
+	display: inline-block;
+  
+    width: auto;
+	height: 38px;
+	
+	background-color: #5BF1CD;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	
+	border-left: 1px solid #5BF1CD;
+
+	/* This makes room for the triangle */
+	margin-left: 19px;
+	
+	position: relative;
+	
+	color:  #6F3FF5;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px;
+	line-height: 38px;
+
+	padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.tag:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -19px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	border-right: 19px solid #5BF1CD;
+}
+
+/* Makes the circle */
+.tag:after {
+	content: "";
+	background-color:  #6F3FF5;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	left: -9px;
+	top: 17px;
 }
 
 /* END HERO */
@@ -601,7 +655,7 @@ footer {
 .section-container {
     display: flex;
     align-items: center;
-    margin-top: 248px;
+    margin-top: 268px;
 
     /* padding: 56px; */
 }
@@ -684,6 +738,33 @@ footer {
     border-color: transparent;
     margin-top: 20px;
     cursor:pointer;
+}
+
+.cta-button {
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    background: #6F3FF5;
+    color: white;
+    text-transform: uppercase;
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 47px;
+    border-color: transparent;
+    margin-top: 20px;
+    cursor:pointer;
+    
+
+}
+
+.cta-buttons {
+    margin-left: 160px;
+}
+
+.cta-hero-box {
+    margin-top: 20px;
 }
 
 .button-call-to-action:hover {
@@ -772,6 +853,7 @@ hr {
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #hero-version-2 .schelling-hero-description .title {
@@ -886,6 +968,9 @@ hr {
         width: 75%;
         height:75%;
     }
+    .cta-buttons {
+       margin:auto;
+    }
 }
 
 
@@ -941,6 +1026,10 @@ hr {
         align-items: center;
         margin-left: 0;
     }
+
+    .cta-buttons {
+        margin:auto;
+     }
 
 }
 tr td{
