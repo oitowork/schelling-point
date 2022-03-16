@@ -23,74 +23,8 @@ html {
     font-family: Montserrat;
 }
 body {
-    /* font-family: 'Miriam Libre', sans-serif; */
     max-width: 100%;
     margin: auto;
-}
-
-@media (min-width: 1313px) {
-    body {
-        font-size: 140%;
-    }
-}
-
-@media (max-width: 1600px) {
-    body {
-        font-size: 120%;
-    }
-}
-
-@media (max-width: 992px) {
-    body {
-        font-size: 110%;
-    }
-}
-
-@media (max-width: 688px) {
-    body {
-        font-size: 80%;
-    }
-    .header-nav-menu li a{
-        margin: 0px;
-        padding: 0px;
-    }
-    #hero-version-2 {
-    }
-
-    /* .img_back{
-    
-    position: absolute;
-    width: 75%;
-    height:75%;
-    } */
-    
-
-}
-.coordination-keys {
-    color:#6F3FF5;
-    font-weight: bold;
-    font-family: 'Libre Franklin';
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.6rem;
-}
-.coordination-keys a {
-    color:#6F3FF5;
-}
-
-.green-symbol {
-    color:#02E2AC;
-    font-weight: 900;
-    padding-right: 2px;
-    padding-left: 2px;
-}
-.amsterdam-hero {
-    background: url('../image/banner-amsterdam.png');
-    width: 1900px;
-    height: 515px;
-    left: 0px;
-    top: 133px;
-
 }
 
 .amsterdam-hero-box {
@@ -113,9 +47,6 @@ body {
     font-weight: bold;
     font-size: 48px;
     line-height: 96.1%;
-    /* or 46px */
-
-
     color: #5BF1CD;
 }
 .amsterdam-hero-box .subtitle{
@@ -130,10 +61,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
-    line-height: 32px;
-    /* identical to box height */
-
-
+    line-height: 32px;      
     color: #FFFFFF;
 }
 .amsterdam-hero-box button{
@@ -143,8 +71,91 @@ body {
     margin-bottom: 139px;
 }
 
+
+@media (min-width: 1313px) {
+    body {
+        font-size: 140%;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 110%;
+    }
+    .amsterdam-hero-box {
+        margin-left: 0;
+    }
+    .amsterdam-hero {
+        width: auto;
+    }
+    .amsterdam-hero-box .title {
+        font-size: 31px;
+    }
+    #banner-news .title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+}
+
+@media (max-width: 688px )   {
+    body {
+        font-size: 80%;
+    }
+    .header-nav-menu li a{
+        margin: 0px;
+        padding: 0px;
+    }
+    .amsterdam-hero-box {
+        margin-left: 0;
+    }
+    .amsterdam-hero {
+        width: auto;
+    }
+    .amsterdam-hero-box .title {
+        font-size: 31px;
+    }
+    #banner-news .title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+
+.coordination-keys {
+    color:#6F3FF5;
+    font-weight: bold;
+    font-family: 'Libre Franklin';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+.coordination-keys a {
+    color:#6F3FF5;
+}
+
+.green-symbol {
+    color:#02E2AC;
+    font-weight: 900;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.amsterdam-hero {
+    background: url('../image/banner-amsterdam.png');
+    width: 118.75rem;
+    left: 0px;
+    top: 133px;
+
+}
+
 #banner-news {
-    width: 100%;
+    width: 118.75rem;
     display: flex;
     flex-direction: row;
     background: #5BF1CD;
@@ -181,7 +192,7 @@ body {
 
 #banner-news .title-box {
     margin-top: 26px;
-    margin-left: 221px;
+    margin-left: 191px;
     align-items: flex-start;
 }
 
@@ -957,10 +968,6 @@ hr {
     height:74px;
 }
 
-.img_back{
-    /* position: absolute; */
-    /* z-index: -9999; */
-}
 
 #hero-version-2 {
     height: 80vh;
@@ -1052,7 +1059,7 @@ hr {
     }
 }
 
-@media (max-width: 688px) {
+@media (max-width: 688px) and (max-width: 844px){
     body {
         font-size: 80%;
     }
@@ -1085,14 +1092,69 @@ hr {
         background-size: 414px;
     }
 
-    /* .img_back{
-        position: absolute;
-        width: 75%;
-        height:75%;
-    } */
     .cta-buttons {
        margin:auto;
     }
+    #banner-news {
+        padding: 0;
+    }
+    #banner-news .title-box {
+        margin: 25px 10px 37px 37px;
+    }
+
+    #banner-news .title-box .title { 
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    #banner-news .button-box {
+        margin: 20px;
+    }
+
+    .schelling-nav {
+        display: none;
+    }
+
+    .amsterdam-hero-box {
+        margin-left: 37px;
+    }
+
+    .amsterdam-hero-box .subtitle  {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .amsterdam-hero-box .title  {
+        margin-bottom: 0;
+        margin-top: 42px;
+        line-height: normal;
+    }
+    
+    .amsterdam-hero-box button {
+        margin-bottom: 29px;
+    }
+
+    .amsterdam-hero-box .cta-button {
+        width: 90px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .amsterdam-hero {
+        background: url('../image/hero-mobile-Image.png') no-repeat #6F3FF5;    
+    }
+    
+    #banner-news .cta-button {
+        width: 116px;
+        height: 30px;
+        font-size: 12px;
+        line-height: 14px;
+        font-family: 'Libre Franklin';
+        color: #fff;
+    }
+   
 }
 
 
@@ -1154,6 +1216,7 @@ hr {
      }
 
 }
+
 tr td{
     padding: 5px;
 }
@@ -1180,5 +1243,21 @@ tr:first-child{
 .footer a{
     color: white;
     text-decoration: underline;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 40px;
+        margin-right: 26px;
+    }
 }
 
