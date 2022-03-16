@@ -31,7 +31,8 @@ current version: ```0.0.2```
 - css
 
 ## How  to Run 
-```
+
+```console
 python -m SimpleHTTPServer 3000
 ```
 
